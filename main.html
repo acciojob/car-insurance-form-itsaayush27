@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Registration Form</title>
 </head>
 <body>
-	 <form method="post">
-    <!-- Name -->
-    <label for="name">Name</label>
-    <input type="text" id="name" required> 
 
-    <!-- Email -->
-    <label for="email">Email</label>
-    <input type="email" id="email" required>
+    <form>
+		<label for="name">Name</label>
+        <input id="name" type="Text" required>
 
-    <!-- Gender -->
-    <label for="gender_m">Male</label>
-    <input type="radio" id="gender_m" name="gender" value="Male" required>
-
-    <label for="gender_f">Female</label>
-    <input type="radio" id="gender_f" name="gender" value="Female" required>
-
-    <!-- Car Brands -->
-    <label for="cars">Car Brands</label>
+		<label for="email">Email</label>
+		<input id="email" type="Email" required>
+		    <label for="cars">Car Brands</label>
+		
     <select id="cars">
       <option value="">--Select a brand--</option>
       <option value="BMW">BMW</option>
@@ -29,21 +22,17 @@
       <option value="Mercedez">Mercedez</option>
     </select><br><br>
 
-    <!-- Car Age -->
-    <label for="carage">Car Age</label>
-    <input type="number" id="carage" required>
+		<label for="carage">Car Age</label>
+		<input type="Number" id="carage" required>
 
-    <!-- Date of Purchase -->
-    <label for="dop">Date of Purchase</label>
-    <input type="date" id="dop" required>
+		<label for="dop">Date of Purchase</label>
+		<input type="date" id="dop" required>
 
-    <!-- Password -->
-    <label for="password">Password</label>
-    <input type="password" id="password" required>
+		<label for="password">Password</label>
+		<input type="Password" id="password" required>
+        
+        <input id="submit" type="submit" value="Submit">
+    </form>
 
-    <!-- Submit -->
-    <button type="submit">Submit</button>
-  </form>
-	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
